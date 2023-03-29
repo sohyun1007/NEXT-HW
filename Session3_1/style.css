@@ -1,0 +1,288 @@
+* {
+    cursor: none;
+}
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    visibility: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.contentWrapper {
+    width: 350px;
+    height: 580px;
+    background-color: rgb(241, 242, 244);
+    position: relative;
+    overflow: auto;
+}
+
+.top {
+    width: 25%;
+    height: 2.5rem;
+    justify-content: space-around;
+    z-index: 5;
+    background-color: rgb(241, 242, 244);
+    position: fixed;
+    opacity: 95%;
+
+}
+.top h1{
+    width: 75%;
+    height: 2.5rem;
+    text-align: left;
+    padding-left: 1rem;
+    color: rgb(177, 182, 192);
+}
+.topMenu {
+    width: 25%;
+    height: 2.5rem;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: rgb(177, 182, 192);
+    padding-right: 0.8rem;
+}
+.highlight {
+    color: rgb(241, 190, 65);
+}
+
+.main {
+    align-items: center;
+    flex-direction: column;
+}
+.mainWrapper {
+    background-color: #ffffff;
+    width: 90%;
+    height: 4rem;
+    border-radius: 1.2rem;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.mainWrapper span {
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding-left: 1.4rem;
+}
+.mainWrapper i {
+    font-size: 0.5rem;
+    color: rgb(177, 182, 192);
+    padding-right: 1.5rem;
+}
+
+.assetWrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    width: 90%;
+    height: 23rem;
+    margin-top: 0.7rem;
+    border-radius: 1rem;
+}
+.asset {
+    width: 85%;
+    height: 3rem;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.asset span {
+    color: rgb(27, 31, 39);
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.asset i {
+    font-size: 0.5rem;
+    color: rgb(177, 182, 192);
+}
+.bankInfo {
+    width: 90%;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    height: 4rem;
+}
+.bankInfo div {
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+    align-items: flex-start;
+}
+.logoImg {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+}
+.bankName {
+    color: rgb(87, 95, 108);
+    font-size: 0.8rem;
+}
+.money {
+    color: rgb(53, 61, 74);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 0.25rem;
+}
+.sendButton {
+    background-color: rgb(242, 242, 243);
+    border: none;
+    width: 3rem;
+    height: 1.8rem;
+    font-size: 0.75rem;
+    color: rgb(79, 88, 103);
+    border-radius: 0.4rem;
+}
+
+.investWrapper {
+    width: 90%;
+    height: 8rem;
+    background-color: #ffffff;
+    margin-top: 0.7rem;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+.invest {
+    width: 85%;
+    height: 3rem;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.invest span {
+    color: rgb(27, 31, 39);
+    font-size: 1.2rem;
+    font-weight: 550;
+    display: inline-block;
+}
+.invest i {
+    font-size: 0.5rem;
+    color: rgb(177, 182, 192);
+}
+.bluePoint {
+    color: rgb(68, 126, 237);
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+
+.spendWrapper {
+    width: 90%;
+    height: 7rem;
+    background-color: #ffffff;
+    margin-top: 0.7rem;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+.spend {
+    width: 85%;
+    height: 3rem;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.spend span {
+    color: rgb(27, 31, 39);
+    font-size: 1.2rem;
+    font-weight: 550;
+    display: inline-block;
+}
+.spend i {
+    font-size: 0.5rem;
+    color: rgb(177, 182, 192);
+}
+
+.subMenuWrapper {
+    width: 40rem;
+    padding: 0 1rem;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-top: 0.7rem;
+}
+.subMenu {
+    width: 8rem;
+    height: 9rem;
+    background-color: #ffffff;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+.subMenu .small {
+    padding: 1rem 0 0 0.3rem;
+    color: rgb(87, 95, 108);
+    font-size: 0.8rem;
+}
+.subMenu .big {
+    padding: 0.7rem 0 0 0.3rem;
+    color: rgb(27, 31, 39);
+    font-weight: 600;
+}
+.down {
+    padding: 1rem 0 0 5rem;
+}
+.up {
+    padding: 0 0 0 5rem;
+}
+
+.plusWrapper {
+    width: 90%;
+    height: 3rem;
+    padding: 2rem 0 2.5rem 0;
+}
+.plusWrapper button {
+    width: 7rem;
+    height: 2.7rem;
+    background-color: rgb(229, 233, 236);
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.plusWrapper button span {
+    color: rgb(76, 86, 99);
+}
+
+.termWrapper {
+    margin-bottom: 4.5rem;
+    color: rgb(187, 192, 199);
+    font-size: 0.2rem;
+}
+.bottom {
+    width: 25%;
+    height: 4rem;
+    border-top: lightgray;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    background-color: #ffffff;
+    justify-content: space-around;
+    position: fixed;
+    top: 37.25rem;
+}
+.bottomMenu {
+    flex-direction: column;
+    color: rgb(176, 183, 193);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+}
+.bottomMenu span {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+}
+.bottomMenu:hover {
+    background-color: rgb(242, 243, 245);
+    color: rgb(5, 18, 30);
+}
