@@ -1,0 +1,7 @@
+2023/03/24-22:21:21.139 3fe8b Reusing MANIFEST /Users/sohyunlim/Desktop/NEXT_HW/Session5/~/ChromeProfile/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/24-22:21:21.139 3fe8b Recovering log #3
+2023/03/24-22:21:21.144 3fe8b Reusing old log /Users/sohyunlim/Desktop/NEXT_HW/Session5/~/ChromeProfile/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2023/03/24-22:21:56.320 3fe8b Level-0 table #5: started
+2023/03/24-22:21:56.326 3fe8b Level-0 table #5: 104939 bytes OK
+2023/03/24-22:21:56.332 3fe8b Delete type=0 #3
+2023/03/24-22:21:56.333 3fe8b Manual compaction at level-0 from (begin) .. (end); will stop at (end)
