@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./NEXT.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    justify-content: space-between;
+    background-color: #ffffff;
+    opacity: 80%;
+}
+.header h1 {
+    width: 10%;
+    padding: 0 1.5rem;
+}
+.header h1 a {
+    color: black;
+    text-decoration: none;
+}
+.header ul {
+    width: 50%;
+    padding: 0.5rem;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.header ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.main div {
+    color: transparent;
+    -webkit-text-stroke: 0.25rem #ffffff;
+    font-size: 15rem;
+    font-weight: 620;
+    padding-top: 14rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

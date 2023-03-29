@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'info.css' %}" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="background">
+        <div class="header flex">
+            <h1><a href="{% url 'home' %}">Portfolio.</a></h1>{% csrf_token %}
+            <ul class="flex">
+                <li><a href="{% url 'info' %}">info</a></li>{% csrf_token %}
+                <li><a href="{% url 'project' %}">project</a></li>{% csrf_token %}
+                <li><a href="{% url 'project' %}">github</a></li>{% csrf_token %}
+                <li><a href="{% url 'project' %}">contact</a></li>{% csrf_token %}
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topWrapper flex">
+                <h2>About Me.</h2>
+            </div>
+            <div class="paraWrapper">
+                <p>
+                    I'm Sohyun Lim, 24 years old from Korea.
+                    <br />A junior developer interested in web develop.
+                    <br />familiar with designing and implementing
+                    <br />user friendly web applications using Vue and Nuxt.js. 
+                </p>
+            </div>
+            <div class="bottomWrapper flex">
+                <div class="flex">html</div>
+                <div class="flex">css</div>
+                <div class="flex">javascript</div>
+                <div class="flex">Vue</div>
+                <div class="flex">Vuex</div>
+                <div class="flex">Nuxt</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
