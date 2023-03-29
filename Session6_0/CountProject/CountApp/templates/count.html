@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountApp</title>
+</head>
+<body>
+    <div class="background">
+        <div class="contentWrapper">
+            <h1>글자를 입력해 보세요!</h1>
+            <!--action {% url 'result' %} = result라는 url로 method는 post로 보낼게! 여기서 POST 보내는 거-->
+            <form action="{% url 'result' %}" method="post">{% csrf_token %}
+                <textarea name="text" cols="30" rows="10"></textarea> <br />
+                <input type="submit" value="제출" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
