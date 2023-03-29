@@ -40,7 +40,8 @@ with open('favorite_movie.csv', 'w', encoding='utf-8', newline='') as file:
 
     
     title = soup.find("h3", class_="h_movie").find("a").text.strip()
-    director=driver.find_element(By.XPATH,'//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[2]/p/a').text
-    rating_review_count=driver.find_element(By.XPATH,'//*[@id="content"]/div[1]/div[4]/div[5]/div[2]/div[3]/strong/em').text
+    director = driver.find_element(By.XPATH,'//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[2]/p/a').text
+    rating = driver.find_element(By.XPATH,'//*[@id="content"]/div[1]/div[4]/div[5]/div[2]/div[2]/div[1]/div/div/em').text
+    rating_review_count = driver.find_element(By.XPATH,'//*[@id="content"]/div[1]/div[4]/div[5]/div[2]/div[3]/strong/em').text
     
-    writer.writerow([title, director, rating_review_count])
+    writer.writerow([title, director, rating,rating_review_count])
