@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+/* background */
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+}
+
+/* contentWrapper */
+.contentWrapper {
+    width: 80%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentWrapper input {
+    width: 85%;
+    height: 100px;
+    font-size: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    outline: none; /* 눌렀을 때 파란 아웃라인 제거 */
+}
+/* input 안에 있는 placeholder css 적용 */
+::-webkit-input-placeholder {
+    color: rgb(153, 153, 153);
+    padding-left: 5px;
+    font-weight: 350;
+}
+#select {
+    margin-left: 70%;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgb(220, 220, 220);
+    padding-left: 6px;
+    width: 169px;
+    height: 30px;
+    border-radius: 5px;
+    /* -webkit-appearance: none; 화살표 없애기 for chrome -> 모든 브라우저에서 화살표 없애는 거 사용 */
+    appearance: none; /* 화살표 없애기 모든 브라우저 */
+    outline: none; /* 눌렀을 때 파란 아웃라인 제거 */
+}
+.contentWrapper textarea {
+    width: 85%;
+    height: 550px;
+    margin-top: 15px;
+    font-size: 14px;
+    border: none;
+    outline: none; /* 눌렀을 때 파란 아웃라인 제거 */
+}
+.contentWrapper button {
+    margin-top: 17.5px;
+    background-color: #ffffff;
+    border: 1px solid rgb(220, 220, 220);
+    width: 169px;
+    height: 37px;
+    border-radius: 5px;
+    font-weight: 600;
+}

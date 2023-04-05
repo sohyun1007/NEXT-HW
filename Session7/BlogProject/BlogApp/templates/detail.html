@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <div class="header">
+            <ul>
+                <li><a href="#">블로그 홈</a></li>
+                <li><a href="#">이웃 블로그</a></li>
+                <li><a href="#">내 메뉴</a></li>
+            </ul>
+            <h1>Sohyun's Blog</h1>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <div class="profile flex">
+                    <span id="user_nm">소현</span>
+                    <span>sothus0807</span>
+                </div>
+                <div class="category">
+                    <span>카테고리</span>
+                    <ul>
+                        <li><a href="{% url 'home' %}">전체보기({{ all_count }})</a></li>    
+                        {% for category in categorys %}
+                        <li><a href="{% url 'detail' category %}">{{ category }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <a class="button flex" href="{% url 'create' %}">글쓰기</a>
+            </div>
+            <div class="content">
+                <span class="count">글 개수 ({{ count }})</span>
+                <ul>
+                    {% for article in articles %}
+                    <li>
+                        <h3>{{ article.title }}</h3>
+                        <span>{{ article.date }}</span>
+                        <p>{{ article.category }}</p>
+                        <p>{{ article.content }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
