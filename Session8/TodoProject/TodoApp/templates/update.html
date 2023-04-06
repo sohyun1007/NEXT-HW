@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'update.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background flex">
+        <h1><a href="{% url 'home' %}">To do List</a></h1>
+        <form action="" method="post" class="contentWrapper flex">
+            {% csrf_token %}
+            <input type="text" name="title" value="{{ Todos.title }}">
+            <textarea name="content" cols="30" rows="10">{{ Todos.content }}</textarea>
+            <button type="submit">edit</button>
+        </form>
+    </div>
+</body>
+</html>
