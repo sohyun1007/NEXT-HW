@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid rgb(220, 220, 220);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.footer span {
+    padding-left: 20px;
+    color: rgb(132, 132, 132);
+    margin-top: 5px;
+}

@@ -127,7 +127,7 @@ body {
     margin-top: 10px;
     margin-right: 40px;
 }
-.content ul li {
+.article li {
     list-style: none;
     width: 90%;
     height: 400px;
@@ -136,19 +136,65 @@ body {
     padding: 5px 40px 10px 40px;
     font-family: 'Courier New', Courier, monospace;
 }
-.content ul li h3 {
+.article li h3 {
     margin-bottom: 3px;
     font-size: 21px;
 }
-.content ul li h3 a {
+.article li h3 a {
     text-decoration: none;
     color: black;
 }
-.content ul li span {
+.article li span {
     font-size: 14px;
     color: rgb(136, 136, 136);
 }
-.content ul li p {
+.article li p {
     font-size: 17px;
     margin-top: 40px;
+}
+.content .commentWrapper {
+    padding-left: 40px;
+}
+.commentWrapper input {
+    width: 85%;
+    height: 50px;
+    border: 1px solid rgb(220, 220, 220);
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 20px;
+    outline: none;
+}
+.commentWrapper button {
+    width: 10%;
+    height: 54px;
+    background-color: #ffffff;
+    border: 1px solid rgb(220, 220, 220);
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.commentList li {
+    width: 85%;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    height: 50px;
+    margin: 20px 0;
+    list-style: none;
+    padding-left: 22px;
+    justify-content: flex-start;
+}
+.commentList li span {
+    width: 90%;
+}
+.commentList li .recomment {
+    text-decoration: none;
+    color: black;
+    width: 60px;
+    height: 40px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+}
+.commentList li a i {
+    margin-left: 15px;
+    color: black;
 }

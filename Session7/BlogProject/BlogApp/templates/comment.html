@@ -2,7 +2,7 @@
 
 {% block css %}
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'comment.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -33,14 +33,25 @@
             <a class="button flex" href="{% url 'create' %}">글쓰기</a>
         </div>
         <div class="content">
-            <span class="count">글 개수 ({{ count }})</span>
-            <ul>
-                {% for article in articles %}
+            <ul class="article">
                 <li>
-                    <h3><a href="{% url 'comment' article.id %}">{{ article.title }}</a></h3>
+                    <h3>{{ article.title }}</h3>
                     <span>{{ article.date }}</span>
                     <p>{{ article.category }}</p>
                     <p>{{ article.content }}</p>
+                </li>
+            </ul>
+            <form action="" method="post" class="commentWrapper">
+                {% csrf_token %}
+                <input type="text" name="content" placeholder="댓글을 입력해주세요!">
+                <button type="sumbit">등록하기</button>
+            </form>
+            <ul class="commentList">
+                {% for comment in article.comments.all %}
+                <li class="flex">
+                    <span>{{ comment.content }}</span>
+                    <a href="{% url 'recomment' article.id comment.id %}" class="recomment flex">답글</a>
+                    <a href="{% url 'comment_delete' article.id comment.id %}"><i class="fa-solid fa-xmark"></i></a>
                 </li>
                 {% endfor %}
             </ul>

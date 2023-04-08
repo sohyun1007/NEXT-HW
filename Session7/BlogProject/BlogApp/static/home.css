@@ -46,6 +46,10 @@ body {
 .header h1 {
     padding-right: 50px;
 }
+.header h1 a {
+    text-decoration: none;
+    color: black;
+}
 
 .main {
     width: 98.25%;
@@ -135,6 +139,10 @@ body {
 .content ul li h3 {
     margin-bottom: 3px;
     font-size: 21px;
+}
+.content ul li h3 a {
+    text-decoration: none;
+    color: black;
 }
 .content ul li span {
     font-size: 14px;

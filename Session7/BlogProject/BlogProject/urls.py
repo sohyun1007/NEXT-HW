@@ -19,7 +19,11 @@ from BlogApp import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("home", views.home, name="home"),
+    path("home/", views.home, name="home"),
     path("create", views.create, name="create"),
     path("detail/<str:category_nm>/", views.detail, name="detail"),
+    path("comment/<int:detail_id>/", views.comment, name="comment"),
+    path("delete-comment/<int:detail_id>/<int:comment_id>/", views.comment_delete, name="comment_delete"),
+    path("recomment/<int:detail_id>/<int:comment_id>/", views.recomment, name="recomment"),
+    path("delet-recomment/<int:detail_id>/<int:comment_id>/<int:recomment_id>/", views.recomment_delelte, name="recomment_delete")
 ]
