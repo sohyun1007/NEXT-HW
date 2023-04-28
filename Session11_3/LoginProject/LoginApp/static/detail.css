@@ -1,0 +1,174 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+.background {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.background .header{
+    width: 100%;
+    height: 119.4px;
+    display: flex;
+    flex-direction: column;
+}
+.background .header .sidemenuWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sidemenuWrapper a {
+    margin: 10px 20px;
+}
+.sidemenuWrapper a:hover {
+    text-decoration: underline;
+}
+.background .header .logoWrapper {
+    text-align: center;
+}
+
+.main {
+    height: 676.5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../static/mainTop.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .input {
+    width: 50%;
+    height: 7.5%;
+    margin-top: 4%;
+    font-size: 28px;
+    background-color: transparent;
+    border: 2.5px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.main .input::placeholder {
+    color: #fff;
+}
+.main .route {
+    width: 18%;
+    height: 6%;
+    font-size: 16px;
+    margin: 1% 0 1% 35%;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+.main .route::placeholder {
+    color: #fff;
+}
+.main .code {
+    height: 15%;
+    width: 50%;
+    padding: 2.5%;
+    background-color: transparent;
+    border: 2.5px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+.main .code::placeholder {
+    color: #fff;
+}
+.main .content {
+    height: 27.5%;
+    width: 50%;
+    padding: 2.5%;
+    margin: 1.5% 0 0 0;
+    background-color: transparent;
+    border: 2.5px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+.main .content::placeholder {
+    color: #fff;
+}
+.main .menuWrapper {
+    height: 10%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main .menuWrapper a {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 25px;
+    text-decoration: underline;
+    color: #fff;
+}
+.main .menuWrapper button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.commentWrapper {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.commentWrapper form  {
+    width: 60%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.commentWrapper form input {
+    width: 50%;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+}
+.commentWrapper form button {
+    width: 20%;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+}
+.commentWrapper form button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.commentWrapper ul {
+    width: 45%;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.commentWrapper ul li {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    height: 30px;
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+.commentWrapper ul li a {
+    margin-right: 115px;
+}

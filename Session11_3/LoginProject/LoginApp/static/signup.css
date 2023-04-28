@@ -1,0 +1,104 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+}
+.background .header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.background .header .sidemenuWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sidemenuWrapper a {
+    margin: 10px 20px;
+}
+.sidemenuWrapper a:hover {
+    text-decoration: underline;
+}
+.background .header .logoWrapper {
+    text-align: center;
+}
+
+.main {
+    height: 85%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../static/mainTop.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main form {
+    width: 30%;
+    height: 67.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+}
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.inputWrapper label {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.inputWrapper input {
+    background-color: transparent;
+    height: 45px;
+    padding: 0 20px;
+    border: 2.5px solid #fff;
+    color: #fff;
+    outline: none;
+    border-radius: 25px;
+    font-size: 18px;
+}
+.inputWrapper span {
+    height: 25px;
+    color: #fff;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+form button {
+    height: 45px;
+    padding: 0 20px;
+    outline: none;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 2.5px solid #fff;
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+.logo a img {
+    width: 45px;
+    height: 45px;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    margin: 0 10px;
+}
