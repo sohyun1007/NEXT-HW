@@ -1,0 +1,137 @@
+.main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentWrapper {
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentWrapper .form {
+    width: 100%;
+    height: 100%;
+}
+.titleWrapper {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.titleWrapper .label {
+    width: 12.5%;
+    font-size: 24px;
+    text-align: center;
+}
+.titleWrapper .input {
+    width: 87.5%;
+    border: none;
+    outline: none;
+    font-size: 21px;
+}
+
+
+.textWrapper {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    height: 75%;
+    margin-top: 5%;
+}
+.textWrapper .label {
+    width: 12.5%;
+    font-size: 21px;
+    text-align: center;
+    height: 100%;
+}
+.textWrapper .textarea {
+    width: 86.5%;
+    height: 99%;
+    padding: 0.5%;
+    outline: none;
+    margin: 0;
+}
+
+.dateWrapper {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+.dateWrapper .date {
+    margin-left: 15px;
+}
+
+.undermenu {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+.undermenu a {
+    font-size: 18px;
+    text-decoration: underline;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.commentWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.commentWrapper form {
+    width: 55%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+.commentWrapper form button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    font-weight: 500;
+}
+.commentWrapper form input {
+    width: 86.5%;
+    height: 100%;
+    padding: 0.5%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+}
+
+.comment {
+    width: 55%;
+}
+.comment a {
+    margin-left: 5.5%;
+}
+.comment li {
+    width: 100%;
+    padding: 0.5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-top: 25px;
+}
+.comment span {
+    margin-right: 3.4%;
+}

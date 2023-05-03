@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="main">
+    <div class="contentWrapper">
+        <div class="imgWrapper">
+            <a href="{% url 'blog:create' %}">Create</a>
+        </div>
+        <ul>
+            {% for post in posts %}
+            <li>
+                <h3><a href="{% url 'blog:detail' post.pk %}">{{ post.title }}</a></h3>
+                <div class="infoWrapper">
+                    <span>Create By {{ post.author }}</span>
+                    <span>Update At {{ post.update_dt }}</span>
+                </div>
+                <p>{{ post.content }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
